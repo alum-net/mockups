@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AlumNet - Course Search</title>
+<title>AlumNet - Buscar cursos</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -54,10 +54,10 @@
 <div class="flex items-center justify-between h-20">
 <h1 class="text-2xl font-bold text-content-light dark:text-content-dark">AlumNet</h1>
 <nav class="hidden md:flex items-center space-x-8">
-<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
-<a class="text-base font-medium text-primary dark:text-primary" href="#">Courses</a>
-<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Messages</a>
-<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Profile</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-base font-medium text-primary dark:text-primary" href="#">Cursos</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Mensajes</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Perfil</a>
 </nav>
 </div>
 </div>
@@ -66,9 +66,9 @@
 <div class="max-w-7xl mx-auto">
 <div class="space-y-4 mb-8">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Course name" type="text"/>
-<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Year of dictation" type="text"/>
-<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Teacher name" type="text"/>
+<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Nombre del curso" type="text"/>
+<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Año" type="text"/>
+<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Nombre del profesor" type="text"/>
 </div>
 <div class="flex items-center justify-between gap-4 flex-wrap">
 <div class="relative">
@@ -83,7 +83,7 @@
 </div>
 <div class="flex items-center gap-2">
 <input class="h-5 w-5 rounded border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark text-primary focus:ring-primary" id="my-courses" type="checkbox"/>
-<label class="text-content-light dark:text-content-dark" for="my-courses">My courses</label>
+<label class="text-content-light dark:text-content-dark" for="my-courses">Mis cursos</label>
 </div>
 </div>
 </div>
@@ -150,19 +150,19 @@
 <div class="flex justify-around h-20 items-center">
 <a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
 <span class="material-symbols-outlined">home</span>
-<span class="text-xs font-medium">Home</span>
+<span class="text-xs font-medium">Inicio</span>
 </a>
 <a class="flex flex-col items-center gap-1 text-primary" href="#">
 <span class="material-symbols-outlined">school</span>
-<span class="text-xs font-medium">Courses</span>
+<span class="text-xs font-medium">Cursos</span>
 </a>
 <a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
 <span class="material-symbols-outlined">message</span>
-<span class="text-xs font-medium">Messages</span>
+<span class="text-xs font-medium">Mensajes</span>
 </a>
 <a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
 <span class="material-symbols-outlined">person</span>
-<span class="text-xs font-medium">Profile</span>
+<span class="text-xs font-medium">Perfil</span>
 </a>
 </div>
 </div>
