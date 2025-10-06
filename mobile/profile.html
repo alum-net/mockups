@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap"
+    />
+
+    <title>Perfil</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      :root {
+        --mobile-max-width: 420px;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+      }
+      .main-mobile-wrapper {
+        width: 100%;
+        max-width: var(--mobile-max-width);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      button,
+      input {
+        touch-action: manipulation;
+      }
+      @media (min-width: 600px) {
+        body {
+          background: #f3f4f6;
+        }
+        .main-mobile-wrapper {
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          border-radius: 12px;
+          margin: 20px 0;
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="main-mobile-wrapper bg-white min-h-screen"
+      style='font-family: Lexend, "Noto Sans", sans-serif;'
+    >
+      <div>
+        <!-- Header -->
+        <div class="flex items-center bg-white p-4 pb-2 justify-center border-b border-[#f0f2f4]">
+          <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">
+            Perfil
+          </h2>
+        </div>
+
+        <!-- Profile picture & name -->
+        <div class="flex flex-col items-center p-6 gap-3">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-32 h-32"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhX7sDfDXQHj70lJzx3UclEivCYk2Pi_wJgnD-7lAFz3dCrksXPfMemD_JzYWoWJT-p2fy2z8r74WXC_QlIA_OHhDc0sjwJvWr1g9KIfsfU0eqysNwxybobJLLttWHIQt1xqlbW6AZI8UMZjmNTMaiPYm4GF_NzIjP_nNzDX7hsbrNoEfAltShOPuZ6JENv5dmVgvZ_IMe4jyI59yDTMzdGeA_YmMiVpG1_9wQjanK91DyZDvZxON2Xm_ynPzJUAXkGA30i3jkMGPJ");'
+          ></div>
+          <p class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+            Sophia Carter
+          </p>
+        </div>
+
+        <!-- Edit profile section -->
+        <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2">
+          Editar Perfil
+        </h3>
+
+        <!-- Name input -->
+        <div class="w-full px-4 pb-3">
+          <label class="flex flex-col w-full">
+            <p class="text-[#111418] text-base font-medium leading-normal pb-2">Nombre</p>
+            <input
+              class="w-full rounded-lg text-[#111418] bg-[#f0f2f4] h-14 placeholder:text-[#617589] p-4 text-base font-normal focus:outline-none focus:ring-2 focus:ring-[#1380ec]"
+              value=""
+            />
+          </label>
+        </div>
+
+        <!-- Email input -->
+        <div class="w-full px-4 pb-3">
+          <label class="flex flex-col w-full">
+            <p class="text-[#111418] text-base font-medium leading-normal pb-2">Correo electrónico</p>
+            <input
+              class="w-full rounded-lg text-[#111418] bg-[#f0f2f4] h-14 placeholder:text-[#617589] p-4 text-base font-normal focus:outline-none focus:ring-2 focus:ring-[#1380ec]"
+              value=""
+            />
+          </label>
+        </div>
+
+
+        <!-- Save button -->
+        <div class="flex px-4 pb-6 justify-end">
+          <button
+            class="rounded-lg h-11 px-4 bg-[#1380ec] text-white text-sm font-bold tracking-[0.015em]"
+          >
+            Guardar Cambios
+          </button>
+        </div>
+          <!-- Change password -->
+        <div class="flex px-4 pb-3 justify-end">
+          <button
+            class="rounded-lg h-11 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold tracking-[0.015em]"
+          >
+            Cambiar Contraseña
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div>
+        <div class="flex px-4 pb-3">
+          <button
+            class="w-full cursor-pointer items-center justify-center rounded-lg h-11 px-4 bg-transparent text-[#111418] text-sm font-bold tracking-[0.015em]"
+          >
+            Cerrar Sesión
+          </button>
+        </div>
+
+        <!-- Bottom navigation -->
+        <div class="flex border-t border-[#f0f2f4] bg-white px-4 pb-2 pt-2">
+          <a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#617589]" href="#">
+            <div class="flex h-8 items-center justify-center">
+              🏠
+            </div>
+            <p class="text-xs font-medium">Inicio</p>
+          </a>
+          <a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#617589]" href="#">
+            <div class="flex h-8 items-center justify-center">
+              🎥
+            </div>
+            <p class="text-xs font-medium">Cursos</p>
+          </a>
+          <a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#617589]" href="#">
+            <div class="flex h-8 items-center justify-center">
+              💬
+            </div>
+            <p class="text-xs font-medium">Mensajes</p>
+          </a>
+          <a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#111418]" href="#">
+            <div class="flex h-8 items-center justify-center">
+              👤
+            </div>
+            <p class="text-xs font-medium">Perfil</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

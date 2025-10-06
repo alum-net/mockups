@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AlumNet - Course Search</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "content-light": "#1f2937",
+                        "content-dark": "#e5e7eb",
+                        "subtle-light": "#9ca3af",
+                        "subtle-dark": "#6b7280",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2a33",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="min-h-screen flex flex-col">
+<header class="bg-surface-light dark:bg-surface-dark shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<h1 class="text-2xl font-bold text-content-light dark:text-content-dark">AlumNet</h1>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-base font-medium text-primary dark:text-primary" href="#">Courses</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Messages</a>
+<a class="text-base font-medium text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">Profile</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="flex-grow p-4 sm:p-6 lg:p-8">
+<div class="max-w-7xl mx-auto">
+<div class="space-y-4 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Course name" type="text"/>
+<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Year of dictation" type="text"/>
+<input class="w-full bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 px-4 text-content-light dark:text-content-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-2 focus:ring-primary" placeholder="Teacher name" type="text"/>
+</div>
+<div class="flex items-center justify-between gap-4 flex-wrap">
+<div class="flex items-center gap-4">
+<div class="relative">
+<select class="w-full md:w-auto appearance-none bg-surface-light dark:bg-surface-dark border-none rounded-lg h-12 pl-4 pr-10 text-content-light dark:text-content-dark focus:ring-2 focus:ring-primary">
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Night</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-subtle-light dark:text-subtle-dark pointer-events-none">
+                        expand_more
+                    </span>
+</div>
+<div class="flex items-center gap-2">
+<input class="h-5 w-5 rounded border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark text-primary focus:ring-primary" id="my-courses" type="checkbox"/>
+<label class="text-content-light dark:text-content-dark" for="my-courses">My courses</label>
+</div>
+</div>
+<button class="bg-primary text-white font-medium h-12 px-6 rounded-lg flex items-center gap-2 hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">add</span>
+<span>Create new course</span>
+</button>
+</div>
+</div>
+<div class="space-y-12">
+<section>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2UdeF2L8HcH-INISxPeYciEmBmIfuiw3VinSbf5WiTKP33YVDSgxU0Wi5KRILt8czBYDQmCqgzqK9bO035uMfQM3el5zEnzjqp7ZXQLuwqe6SDdI7CMYQi6QVY8VogagsO7A0TJtNWCQgkHk9qGoikPFWw2XXozf_P7lWaGLpKQwituylwM3qvr1pnSU7ksrDbKMLEfcHCb7AdMeu31rQS2msGbjLcj96JMwQHShbqLPyXLz3gVSWhOFpvb9alfWn82kD1ZKiLWdd");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Art History 101</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dr. Eleanor Vance</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTG9e1ky0jaaqZVy8E6sV3LmkKv9fsLnTWm8WYx_9KujxZybyREQdFvQGUA9N21OOTLll-lxB4ZqS8_0Ho0eUDnc35RIFn0K3sC_etjYBTnAdiVHU2wQh1OfU-XfQ4iU__m1sQP3priwtYFNf1miL3o2i7dfVO_BxGPLrO2pmKQXRXlrD1HgqlpOSldmBKFiuTmNYUy8aHLVLeBihV-FJXSVsmDowHG2wMn-JOs2jwJPIiB3LGZColbqyizWbo_qqeMWnQyQrXy19z");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Calculus I</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Prof. Alan Turing</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-L4-NNR_nT7TzeoLQoItVxi_Tty0BQsBSWzc0Z2AVFE-1wbO4AiOiKPiQJdNxpVMZpDSu9fH9OVE__PmK1dyt-tj9sn6SwcC1uu44UiWkkr74z59lsPmc5Fz9PooC3HeUC6AiqkjmDRRZf7d1D4EgYo5keuKWFyul_mKwTRJas2rwY9gQs4l1jZebPathd1ZgfPk6NtJMyTUp8lkf4Xs-ovlzue8WKHRTz8y7WkCI7-H0TLkDjxMEmyFwS_RD_HX4VjnzIIpwiUrx");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Physics for Beginners</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dr. Marie Curie</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCkk1yopEACbS4J6ZMF3siyfLLlPXsoysnHWo_RzyQEKgU2G-q3p_KqaHU_kruCD6rVI73gAmLr3rLVkrUUHsiv_17EgIokAGFQE5WQkuEJOpeBhXzNfoIJqUjjKc7iA1ksmMXJfQfV_rKvDWSG0QDwNhV4K3vSFJ5QBnTBMSyWfHlio3WXp21QAcq7vD2L_vrn8vph1H7C3JkmVpHnMJBa110M-v_pY9uevOr-kMCuJHuA6-spH7xwL2uakcxI0fPBWhFPm8pQwnO");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Intro to Literature</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Prof. Jane Austen</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCD-Pzuc57d8a9ieFQ1cr5X_af1_gwDhdy5lWdhUP3DoTN2-rufZeXirFplyHXug6FANqcxbvjMdQTOaVCLwCp5UrJf34GaQKZAd_7V_jgROkCHKGGAqwbQdXTWmRN2bCyseAoyZzZfJpfgYIG9YcV727UEZHBh1w7UrpBy9rpVIYfrfNcrpCZRpF-49aS-hJnjtMD2N49xtxVZ9QQOvyRMWaQ-MZJY14z2FMDxsiHqRHOSbyUrBS4mhgBosyaSRXcj5hdEz2JCelYG");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">CS Fundamentals</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dr. Ada Lovelace</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdXTbOqIJuwx-PiLojFtG6MvHi0zbxd1zKAeSkOwCc-9XvFqKPIMhuZ49Ocs2oZhMfR0SvBxNKrZFcQuFNMH-6HK0FS4aNNBDQZIwVjvuSjxRxY2jb6GLmtlNPbs-Tma2bj_UPwQtQEtIYKavHdCYxTjV1r4r85dZD1oqLSYPSXUB8K8qvqaD3eoG_4ptQPdHTUvPlZ35Wv1xaGTCbLvBpjpmeKcEPI5VLkuvAkNfATA0FtQEODX_qsazKmRYZm6F0GUt-4toPwKIX");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Data Science Basics</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dr. John Snow</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBWUpuwgW2P2BqTa1dzzUb01h1JCGCXhq8CJw0l7b-o7Yhr_Biwazlf-Om8EbHKokCCFKgeNLhpPHRG1VHPkoN9Vw5Rkj79LuQl3NYhqWJBzTCTMKMPxKX8c7aIfWRdB4xkFLQSFbhXxzr6HtWF_URTGGSV-VmJAyqYlBVqxTITPqjpuZ4C1pizsDU3ICfzRiqHC1O9QV_Ogy4OkFboLlfy2q5iAhupR4ISvxiD1McdZfoYIxscJ3KYmNJSTvaMHx6nwABflJ74-4KL");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Creative Writing</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Prof. Virginia Woolf</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3pkdSVLLMKOdip_fjT6o6IUffFogig3GpaHX4lDapWNtBGatx4yIdUzRWuopCV_Uk6RWHLedprUe_pWliADzLJqasj0IgO1oGddYkilFyioOWo5nS3y8jSEy1KSm4JPQAaSbpGxm4g_7gfUlWtuvSwdXWAHvwqD-Dk5ySLNPG3dNSFIeSnTwGVcNJPX2suatXvsXps--rMiZip17hQkRK8gNsyHL_UH3WTycS1ZxStmtSIk0VIqgCI878LhZVfJ7TxH0ezj4kP-8b");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Principles of Economics</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dr. Adam Smith</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAsThgzhoSr9xmm35TIHaqdn8hY5OHu9EcqEMfI9FheKeNeioKQvjqprppYnCi6P4jNrBDUv3Q1p8CF7xjyV4fsFU9LR1qCAeDg4683fpEHlH_a6knSS4klLD1kV0GgYRoSHnZTwZUdLUjJY4pW73UdOtxxb5RD4dWHjHjRAhvGgvtD55Yv8uMUsV_dvDv43kVlQ5DLwJ15KHHZJCkv4zj0ptNbcPYrZkqXlwL4r6mVsb8Gq_o_dP2Ufa4_2q9a1mioHo61BM5mkxS");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Intro to Psychology</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Dr. Sigmund Freud</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+<div class="group">
+<div class="w-full bg-center bg-no-repeat aspect-w-1 aspect-h-1 bg-cover rounded-lg mb-2 transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdXXTvkL3sMcoiXp-yQcwDfFOEIQahcxuNbfmN6umUjC7LBOfyJTIf38Mcnbah8sdnURFOBkyeNo_nHU9xXHAgKrmr3YAjwFBnx2g72-GiOkQg0OO_JZh5PW_gvhM0pIw1TaLCnHb6jvhHHQjEbAbbKO9XyfRDsEqk5ys_Sn0CQ50Vy_yz7m-IptJ-Kyo2k1egwuFgICr-77xyBs8N6r_KpWYxJ9uPANLIXAPtjinaTuc5LJcdkDlTyeap_Uxz_eci50HZWlPZIxI3");'></div>
+<p class="text-base font-medium text-content-light dark:text-content-dark">Digital Marketing</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Prof. Philip Kotler</p>
+<a class="text-sm text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-500 mt-1 inline-block" href="#">Delete</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<nav class="sticky bottom-0 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-sm border-t border-subtle-light/20 dark:border-subtle-dark/20 md:hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-around h-20 items-center">
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-medium">Courses</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">message</span>
+<span class="text-xs font-medium">Messages</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</div>
+</nav>
+</div>
+</body></html>

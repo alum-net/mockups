@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>VLE Forum - Edit Post</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+              "foreground-light": "#0d171b",
+              "foreground-dark": "#f6f7f8",
+              "subtle-light": "#e7eff3",
+              "subtle-dark": "#1a2a33",
+              "muted-light": "#4c809a",
+              "muted-dark": "#a1b3be",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between border-b border-subtle-light dark:border-subtle-dark px-6 py-4">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3" href="#">
+<div class="grid h-10 w-10 place-content-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-2xl"> school </span>
+</div>
+<h1 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">LearnHub</h1>
+</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-subtle-light dark:bg-subtle-dark text-foreground-light dark:text-foreground-dark">
+<span class="material-symbols-outlined text-2xl"> notifications </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEU24Gir2_V7eozYKY1dKvMoApcjAee93Lza2YY3fv7Ev_MjhDoiuM-SdQpvre70CR_Sz5cFjzyoX5m41lUsktcMv1IyXA5x3x9zyNFJGwcPzx_YMNJmbfPt7ltqqpTPSXu3fMQwr1n4xLm4KzYW8h8mc8jnnRegZCdMGEMg-m7g-2K6C88LaOJ5pOzdXT5fXPC6QpBSdmeT8o-ZOIRvfH63pu0f3sV5PWU-B30Edc8H49HZ8Fd_WbkFVQJ4tkz5hJx296VWHEFSE5");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 py-8 sm:px-6 md:px-10 lg:px-20">
+<div class="mx-auto max-w-4xl">
+<div class="mb-6 flex items-center gap-3">
+<a class="flex items-center text-primary hover:underline" href="#">
+<span class="material-symbols-outlined"> arrow_back </span>
+<span class="ml-1 font-medium">Back to Questions</span>
+</a>
+</div>
+<div class="space-y-6">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">Understanding the Basics of Quantum Physics</h2>
+<p class="mt-1 text-sm text-muted-light dark:text-muted-dark">Posted by Sarah Miller · 2d ago</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light dark:bg-background-dark p-4">
+<img alt="Sarah Miller's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnfNDtqF7YPRpkPuGlmY4DWKI4_Ynd1LaiA_mxxPaqCguqWCGA_k4PUZQHHVL8Epspen5-ud5DAJJUTDUB4toS8J3rEj4Xv0rQx0XgMgPj4ri8-SYXuWouj07oBudwjCc0aBmqWmEv8tL0hEav_I-FbkPaTgLs0JrA8ul7vTUuvQNzqdj5nCxFlZDijy_Ab27wRmZWNp07H9ImlPeXplLQCRRBmPuNm5kCVz4Nj5fSii_2GsUlNjOZslKAcWNIGt1_iEvGZtbSSXqG"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Sarah Miller</p>
+<p class="text-sm text-foreground-light dark:text-foreground-dark mt-2">
+            Hey everyone, I'm finding the initial concepts of quantum physics a bit challenging. Specifically, I'm struggling with the wave-particle duality. Can anyone recommend some good introductory resources or explain it in a simple way? Thanks!
+          </p>
+<div class="mt-3 flex items-center gap-4 text-sm text-muted-light dark:text-muted-dark">
+<span>2d ago</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-4 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light dark:bg-background-dark p-4">
+<img alt="David Chen's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg03J5DIaOTKj1TursUG9Y1FALWmBhlTtqNv5mnxJ3lBuqRa-uFJ4o6j3xzWd_N8yM0uspkOw0AwIFfnPFIoDkjTKMHDI4ZdY8bVqJAvfX0c2A_fQsLK8Ne44rub0xzkvXVRDraKlAo1kBiFmPUiDRIgQq_uzyWJ3lx016uIvZpa2Va0ZczlLQn7l0sSVNyj1TzYnt5lBMwOUWd5I4j4OV7MRoYzcWRpHDeUMMmXPLuXdXsxiDwGJQpeWWeNw7dFHUe7dqBDI3VnE-"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">David Chen</p>
+<p class="text-sm text-foreground-light dark:text-foreground-dark mt-2">
+            Hi Sarah, I totally get it. It's a mind-bending topic! I found a series of videos by 3Blue1Brown on YouTube that were incredibly helpful for visualizing the concepts. He has a knack for making complex ideas more intuitive. I'd also recommend the book "Quantum Mechanics: The Theoretical Minimum" by Leonard Susskind. It's a great starting point.
+          </p>
+<div class="mt-3 flex items-center gap-4 text-sm text-muted-light dark:text-muted-dark">
+<span>1d ago</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-4 rounded-lg border border-primary bg-subtle-light/50 dark:border-primary dark:bg-subtle-dark/50 p-4">
+<img alt="Emily Rodriguez's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDqEntvHxZR-pJ3Ey0hzB0iBgnuaQxbq5m-a4rDbdbGjVteKSL41j8h348LDZxHjxmR_HcV29lwlKnqGsPlMJdOtOOl2TjctxdCZYMvy6TCU0wuuKLEZg4MNfnTdli1--Z7idfU0zYYZqyRchbLGH1gOw50Tp8ae9iFTY4sX1KIVxBk-PABI1vIKVlfUY5d43xvsadPhNwGUezxhXwi4UWhkeKQMmcCJa8h14Fmwr3zeMENya9pvVQ04qY2616cpLfXETSpNSW09wk"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Emily Rodriguez</p>
+<p class="text-sm text-foreground-light dark:text-foreground-dark mt-2">
+            Great suggestions, David! To add to that, think of it like this: an electron is like a shy person at a party. When no one is looking, they're dancing all over the place (wave-like behavior). But the moment you look at them (measure their position), they stop and stand in one spot (particle-like behavior). It's a simplification, but it helped me grasp the core idea. Don't worry, you'll get there!
+          </p>
+<div class="mt-3 flex items-center justify-between text-sm text-muted-light dark:text-muted-dark">
+<span>1h ago</span>
+<div class="flex items-center gap-2">
+<button class="flex h-8 w-8 items-center justify-center rounded-full hover:bg-subtle-light dark:hover:bg-subtle-dark">
+<span class="material-symbols-outlined text-base"> edit </span>
+</button>
+<button class="flex h-8 w-8 items-center justify-center rounded-full hover:bg-subtle-light dark:hover:bg-subtle-dark">
+<span class="material-symbols-outlined text-base"> delete </span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+<div class="w-full max-w-2xl rounded-xl bg-background-light dark:bg-background-dark shadow-2xl">
+<div class="border-b border-subtle-light dark:border-subtle-dark p-6">
+<h3 class="text-xl font-semibold text-foreground-light dark:text-foreground-dark">Edit Your Reply</h3>
+</div>
+<div class="p-6">
+<div class="rounded-lg border border-subtle-light dark:border-subtle-dark">
+<div class="flex items-center gap-2 border-b border-subtle-light dark:border-subtle-dark p-2">
+<button class="rounded p-2 hover:bg-subtle-light dark:hover:bg-subtle-dark"><span class="material-symbols-outlined text-lg">format_bold</span></button>
+<button class="rounded p-2 hover:bg-subtle-light dark:hover:bg-subtle-dark"><span class="material-symbols-outlined text-lg">format_italic</span></button>
+<button class="rounded p-2 hover:bg-subtle-light dark:hover:bg-subtle-dark"><span class="material-symbols-outlined text-lg">format_underlined</span></button>
+<button class="rounded p-2 hover:bg-subtle-light dark:hover:bg-subtle-dark"><span class="material-symbols-outlined text-lg">format_list_bulleted</span></button>
+<button class="rounded p-2 hover:bg-subtle-light dark:hover:bg-subtle-dark"><span class="material-symbols-outlined text-lg">format_list_numbered</span></button>
+<button class="rounded p-2 hover:bg-subtle-light dark:hover:bg-subtle-dark"><span class="material-symbols-outlined text-lg">link</span></button>
+</div>
+<textarea class="min-h-[150px] w-full resize-none border-0 bg-transparent p-4 text-foreground-light dark:text-foreground-dark focus:ring-0" placeholder="Write your reply...">Great suggestions, David! To add to that, think of it like this: an electron is like a shy person at a party. When no one is looking, they're dancing all over the place (wave-like behavior). But the moment you look at them (measure their position), they stop and stand in one spot (particle-like behavior). It's a simplification, but it helped me grasp the core idea. Don't worry, you'll get there!</textarea>
+</div>
+</div>
+<div class="flex justify-end gap-4 border-t border-subtle-light dark:border-subtle-dark p-6">
+<button class="rounded-lg border border-subtle-light dark:border-subtle-dark px-6 py-2 font-semibold text-foreground-light dark:text-foreground-dark hover:bg-subtle-light dark:hover:bg-subtle-dark">Cancel</button>
+<button class="rounded-lg bg-primary px-6 py-2 font-semibold text-white hover:bg-primary/90">Save Changes</button>
+</div>
+</div>
+</div>
+
+</body></html>

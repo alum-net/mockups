@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap"
+    />
+
+    <title>Tarea</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      :root {
+        --mobile-max-width: 420px;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+      }
+      .main-mobile-wrapper {
+        width: 100%;
+        max-width: var(--mobile-max-width);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      button,
+      input,
+      a {
+        touch-action: manipulation;
+      }
+      @media (min-width: 600px) {
+        body {
+          background: #f3f4f6;
+        }
+        .main-mobile-wrapper {
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          border-radius: 12px;
+          margin: 20px 0;
+          overflow: hidden;
+          background: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-mobile-wrapper" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="flex-1">
+        <!-- Header -->
+        <div class="flex items-center bg-white p-4 pb-2 justify-between border-b border-[#f0f2f4]">
+          <button class="text-[#111418] flex size-10 items-center justify-center rounded-md hover:bg-[#f0f2f4]">
+            <!-- Back Arrow -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+            </svg>
+          </button>
+          <h2 class="text-[#111418] text-lg font-bold flex-1 text-center pr-12">Tarea</h2>
+        </div>
+
+        <!-- Task Title -->
+        <h1 class="text-[#111418] text-[22px] font-bold leading-tight px-4 pt-5 pb-3">
+          Ensayo sobre Literatura Moderna
+        </h1>
+
+        <!-- Task Description -->
+        <p class="text-[#111418] text-base font-normal leading-normal px-4 pb-4">
+          Escribe un ensayo de 1500 palabras analizando el impacto de la tecnología en la literatura moderna. 
+          Incluye referencias a al menos tres autores contemporáneos.
+        </p>
+
+        <!-- Due Date -->
+        <h3 class="text-[#111418] text-lg font-bold px-4 pb-2">Fecha de Entrega</h3>
+        <div class="flex items-center justify-between bg-white px-4 py-3 border-t border-b border-[#f0f2f4]">
+          <p class="text-[#111418] text-base">Viernes, 10 de mayo de 2024</p>
+          <p class="text-[#111418] text-base">Faltan 2 días</p>
+        </div>
+
+        <!-- Status -->
+        <h3 class="text-[#111418] text-lg font-bold px-4 pb-2 pt-4">Estado</h3>
+        <div class="flex items-center justify-between bg-white px-4 py-3 border-t border-b border-[#f0f2f4]">
+          <p class="text-[#111418] text-base">Calificado</p>
+          <p class="text-[#111418] text-base">85/100</p>
+        </div>
+      </div>
+
+      <!-- Upload Button -->
+      <div class="px-4 py-4">
+        <button
+          class="w-full h-12 rounded-lg bg-[#1380ec] text-white text-base font-bold tracking-[0.015em]"
+        >
+          Subir Entrega
+        </button>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="flex gap-2 border-t border-[#f0f2f4] bg-white px-4 py-2">
+        <a class="flex-1 flex flex-col items-center justify-center text-[#617589]" href="#">
+          <div class="h-8 flex items-center justify-center">
+            <!-- Home -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77Z"/>
+            </svg>
+          </div>
+          <p class="text-xs font-medium">Inicio</p>
+        </a>
+        <a class="flex-1 flex flex-col items-center justify-center text-[#111418]" href="#">
+          <div class="h-8 flex items-center justify-center">
+            <!-- Cursos -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M56,128a16,16,0,1,1-16-16A16,16,0,0,1,56,128ZM40,48A16,16,0,1,0,56,64,16,16,0,0,0,40,48Zm0,128a16,16,0,1,0,16,16A16,16,0,0,0,40,176Zm176-64H88a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A8,8,0,0,0,216,112Zm0-64H88a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Zm0,128H88a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Z"/>
+            </svg>
+          </div>
+          <p class="text-xs font-medium">Cursos</p>
+        </a>
+        <a class="flex-1 flex flex-col items-center justify-center text-[#617589]" href="#">
+          <div class="h-8 flex items-center justify-center">
+            <!-- Mensajes -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Z"/>
+            </svg>
+          </div>
+          <p class="text-xs font-medium">Mensajes</p>
+        </a>
+        <a class="flex-1 flex flex-col items-center justify-center text-[#617589]" href="#">
+          <div class="h-8 flex items-center justify-center">
+            <!-- Perfil -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"/>
+            </svg>
+          </div>
+          <p class="text-xs font-medium">Perfil</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

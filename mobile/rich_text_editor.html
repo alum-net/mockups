@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root{--mobile-max-width:420px}
+      body{margin:0;min-height:100vh;display:flex;justify-content:center;background:#fff;-webkit-font-smoothing:antialiased}
+      .main-mobile-wrapper{width:100%;max-width:var(--mobile-max-width);box-sizing:border-box}
+      button,input,textarea{touch-action:manipulation}
+      @media(min-width:600px){
+        body{background:#f3f4f6}
+        .main-mobile-wrapper{box-shadow:0 10px 30px rgba(0,0,0,.08);border-radius:12px;margin:20px 0;overflow:hidden}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-mobile-wrapper bg-white min-h-screen flex flex-col">
+      
+      <!-- Header -->
+      <div class="flex items-center bg-white p-4 border-b border-[#dbe0e6]">
+        <button class="text-[#111418] text-xl font-bold">←</button>
+        <h2 class="text-[#111418] text-lg font-bold flex-1 text-center pr-6">Editor</h2>
+      </div>
+
+      <!-- Editor body -->
+      <div class="flex flex-col bg-white p-4 flex-1">
+                <label class="text-[#617589] text-sm mb-1">Mensaje</label>
+        <div class="border border-[#dbe0e6] rounded-lg flex flex-col">
+          <textarea placeholder="Mensaje"
+            class="w-full p-3 text-[#111418] text-base resize-none focus:ring-0 focus:outline-none"
+            rows="6"></textarea>
+
+          <!-- Toolbar -->
+          <div class="flex items-center justify-between border-t border-[#dbe0e6] px-3 py-2 text-[#111418]">
+            <div class="flex gap-4">
+              <button>B</button>
+              <button>I</button>
+              <button>1. 2.</button>
+              <button>[x]</button>
+              <button>&lt;/&gt;</button>
+            </div>
+            <button>&gt;</button>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button class="mt-6 w-full bg-[#1380ec] text-white font-bold rounded-lg py-3">
+          Publicar 
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

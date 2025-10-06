@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EduConnect - Users</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-screen flex-col">
+<header class="flex items-center justify-between border-b border-gray-200 dark:border-gray-700/50 px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="text-primary size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold">EduConnect</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined">add</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCaIY1BYmyGsKbJzXdnJyh0WZunWVMN-7pPK8wO0nz04O9HjRJfbzRUBrZDrbZ-x7RPVVSt9zlMzfEnyzXg7wNjeJTBHSqz0sSmbU-so2k3tiwcjjA5wkdKFHd_kAfQT0ayhSNU3dRkkYs3rDMhiXcSR3fMP428alB7RjKZCNvnN55FdyrKETDt9jIGunrfvyqEdQ1BiY65JKHTFCs7nUdhs8IIHwk4Ouo0MOt8Yn5nPp2SBA2BfaW51t7P0BeJtP8ExtRw3teo43Or");'></div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-6 lg:p-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Users</h2>
+<button class="flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white rounded-lg shadow-sm hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">add</span>
+<span>Create user</span>
+</button>
+</div>
+<div class="bg-white dark:bg-gray-800/50 p-6 rounded-xl shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">search</span>
+<input class="w-full pl-10 pr-4 py-2 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark rounded-lg focus:ring-primary focus:border-primary" placeholder="Nombre y/o apellido" type="text"/>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">mail</span>
+<input class="w-full pl-10 pr-4 py-2 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark rounded-lg focus:ring-primary focus:border-primary" placeholder="Mail" type="email"/>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">badge</span>
+<select class="w-full pl-10 pr-4 py-2 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark rounded-lg appearance-none focus:ring-primary focus:border-primary">
+<option>Rol</option>
+<option>Administrador</option>
+<option>Profesor</option>
+<option>Estudiante</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-gray-200 dark:border-gray-700">
+<th class="px-4 py-3 font-medium text-gray-600 dark:text-gray-400">Name</th>
+<th class="px-4 py-3 font-medium text-gray-600 dark:text-gray-400">Last Name</th>
+<th class="px-4 py-3 font-medium text-gray-600 dark:text-gray-400">Email</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-200 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-900/20">
+<td class="px-4 py-4 text-gray-900 dark:text-white">Sophia</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">Clark</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">sophia.clark@email.com</td>
+</tr>
+<tr class="border-b border-gray-200 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-900/20">
+<td class="px-4 py-4 text-gray-900 dark:text-white">Ethan</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">Walker</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">ethan.walker@email.com</td>
+</tr>
+<tr class="border-b border-gray-200 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-900/20">
+<td class="px-4 py-4 text-gray-900 dark:text-white">Olivia</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">Hayes</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">olivia.hayes@email.com</td>
+</tr>
+<tr class="border-b border-gray-200 dark:border-gray-700/50 hover:bg-gray-50 dark:hover:bg-gray-900/20">
+<td class="px-4 py-4 text-gray-900 dark:text-white">Liam</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">Carter</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">liam.carter@email.com</td>
+</tr>
+<tr class="hover:bg-gray-50 dark:hover:bg-gray-900/20">
+<td class="px-4 py-4 text-gray-900 dark:text-white">Ava</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">Bennett</td>
+<td class="px-4 py-4 text-gray-500 dark:text-gray-400">ava.bennett@email.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

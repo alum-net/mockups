@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root{--mobile-max-width:420px}
+      html,body{height:100%}
+      body{margin:0;min-height:100vh;display:flex;justify-content:center;background:#fff;-webkit-font-smoothing:antialiased}
+      .main-mobile-wrapper{width:100%;max-width:var(--mobile-max-width);box-sizing:border-box}
+      button,input,select,a{touch-action:manipulation}
+      @media(min-width:600px){body{background:#f3f4f6} .main-mobile-wrapper{box-shadow:0 10px 30px rgba(0,0,0,.08);border-radius:12px;margin:20px 0;overflow:hidden}}
+    </style>
+  </head>
+  <body>
+    <div class="main-mobile-wrapper">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-white justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <!-- Header -->
+        <div class="flex items-center bg-white p-4 pb-2 justify-between">
+          <div class="text-[#111418] flex size-12 shrink-0 items-center" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Foro</h2>
+        </div>
+
+        <!-- Post 1 -->
+        <div class="flex w-full flex-row items-start justify-start gap-3 p-4">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBY9bzrfM9j7y2HoEuVABkPKnN9teoe_4lm-XFLbw8_PbSdPs33oGzyew27YhlUrtiiRy8TJf4Fi5uoRHW_GKGs-dLlPcDeapwmxUimo-vgO-rKIV62T4EZhuw4obThR70lY2KerdKYFv1SFGgzLph8MQK_foQmNnNgXtXa8XXNA1WwUAcHFzpAd3DKieL4aXDrUsq1vPL7xF1eJjoERqDaVx-wYsEqosj98ADf3MY6qv_h1Msw_nzagL3pIjpeeiYpWMKJdpV4eWD_");'
+          ></div>
+          <div class="flex h-full flex-1 flex-col items-start justify-start">
+            <div class="flex w-full flex-row items-start justify-between">
+              <div class="flex gap-x-3 flex-wrap">
+                <p class="text-[#111418] text-sm font-bold">Ethan Carter</p>
+                <p class="text-[#617589] text-sm">Hace 12 h</p>
+              </div>
+              <p class="text-[#617589] text-sm underline cursor-pointer">Respuesta</p>
+            </div>
+            <p class="text-[#111418] text-sm">¿Cómo prepararse para el examen final?</p>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="flex w-full flex-row items-start justify-start gap-3 p-4 pl-12">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkx4b2cX3c-Rda27GxtFzhpa5dKtuUAZ1iWL9x_1VGNk0NqawSgQ5OmAe41xrKSMpT6uC_8qoGoMkwUfht5AIfS4iip-ywKPE17uJLoU5stDNNdiR2SE2OS2T3OcblU5jTm9bdI04YzpSPhSmD2SHu21BZrhP9egCylX2h8ra4SZ-mFAi2_QtbgC219LPezdlZ4L9cKg5hwAnXm3L1nMGGN-X561c6RM81UNJaSk4sFpxU3Fc6i0qDsaO5HOYI4A8zIskBFFph2jjL");'
+          ></div>
+          <div class="flex h-full flex-1 flex-col items-start justify-start">
+            <div class="flex w-full flex-row items-start justify-between">
+              <div class="flex gap-x-3 flex-wrap">
+                <p class="text-[#111418] text-sm font-bold">Sophia Clark</p>
+                <p class="text-[#617589] text-sm">Hace 1 d</p>
+              </div>
+              <p class="text-[#617589] text-sm underline cursor-pointer">Respuesta</p>
+            </div>
+            <p class="text-[#111418] text-sm">¿Cuál es la mejor forma de estudiar para el examen?</p>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="flex w-full flex-row items-start justify-start gap-3 p-4 pl-20">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOwOKxtsw5AdpIQ5ooSkiyp4maakvLJijbC-R2EfBucgdCSFxhPTG1UAeb4v8n9zQuAcXrKG7OUSGO41CFBXvhW204RhlQF763dONVCu1_WmRBRGnENrDTB0NYcxcOTqpqpO7PRqG9NzVXe2E7JYRTivk-6FyvkT-lkKAyeHLFS1ollkGk2xRJ81KBOCOR4kUKvRqcPULaiwgCHKEAQtnE0RHdD1m10x3acdzEg5L1VKzbBo_TzRFA1IZCkZK4JoEWlWDwUhG_KvLP");'
+          ></div>
+          <div class="flex h-full flex-1 flex-col items-start justify-start">
+            <div class="flex w-full flex-row items-start justify-between">
+              <div class="flex gap-x-3 flex-wrap">
+                <p class="text-[#111418] text-sm font-bold">Liam Harper</p>
+                <p class="text-[#617589] text-sm">Hace 2 d</p>
+              </div>
+              <p class="text-[#617589] text-sm underline cursor-pointer">Respuesta</p>
+            </div>
+            <p class="text-[#111418] text-sm">¿Cuál es la mejor forma de estudiar para el examen?</p>
+          </div>
+        </div>
+
+        <!-- Post 4 (with edit/delete links) -->
+        <div class="flex w-full flex-row items-start justify-start gap-3 p-4 pl-28">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJILqAoJ1sE1QeBV1lSSg-yhNNoiBZpF2pG0bYGLWt-C7Ts9-VG-qzt42Hoos_4FMzDxNAYyZC6KZrXhR5YRs4FhVtZywIiv-w8OPhCVpBH5wY2OXSemX6yyOEQn2bU8GZYPdKqhugM9QFzfv_9wXFIRS0uluK59MuHp5KUlhWxNql72NbW8CEL7jcftE_oq_fKYY5HZ7L0_83YFcUF8o-WcvYGtb85CgHd6zrdPIpxq4S0fQrIofEDO4pQJSi5yQGb7tZsUV4eafB");'
+          ></div>
+          <div class="flex h-full flex-1 flex-col items-start justify-start">
+            <div class="flex w-full flex-row items-start justify-between">
+              <div class="flex gap-x-3 flex-wrap">
+                <p class="text-[#111418] text-sm font-bold">Olivia Bennett</p>
+                <p class="text-[#617589] text-sm">Hace 3 d</p>
+              </div>
+              <div class="flex gap-3 flex-wrap text-sm">
+                <p class="text-[#617589] underline cursor-pointer">Respuesta</p>
+                <p class="text-[#111418] underline cursor-pointer">Editar</p>
+                <p class="text-[#111418] underline cursor-pointer">Eliminar</p>
+              </div>
+            </div>
+            <p class="text-[#111418] text-sm">¿Cuál es la mejor forma de estudiar para el examen?</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="flex absolute top-0 left-0 h-full w-full flex-col justify-end items-stretch bg-[#141414]/40">
+          <div class="flex flex-col items-stretch bg-white">
+            <button class="flex h-5 w-full items-center justify-center"><div class="h-1 w-9 rounded-full bg-[#dbe0e6]"></div></button>
+            <div class="flex-1">
+              <h1 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-center pb-3 pt-5">Eliminar Publicación</h1>
+              <p class="text-[#111418] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">¿Estás seguro de que quieres eliminar esta publicación?</p>
+              <div class="flex justify-center">
+                <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 max-w-[480px] justify-center">
+                  <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] grow">
+                    <span class="truncate">Cancelar</span>
+                  </button>
+                  <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1380ec] text-white text-sm font-bold leading-normal tracking-[0.015em] grow">
+                    <span class="truncate">Eliminar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-5 bg-white"></div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

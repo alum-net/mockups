@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>VLE Forum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+              "foreground-light": "#0d171b",
+              "foreground-dark": "#f6f7f8",
+              "subtle-light": "#e7eff3",
+              "subtle-dark": "#1a2a33",
+              "muted-light": "#4c809a",
+              "muted-dark": "#a1b3be",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex min-h-screen w-full flex-col">
+<header class="flex items-center justify-between border-b border-subtle-light dark:border-subtle-dark px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="grid h-10 w-10 place-content-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-2xl"> school </span>
+</div>
+<h1 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">LearnHub</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-subtle-light dark:bg-subtle-dark text-foreground-light dark:text-foreground-dark">
+<span class="material-symbols-outlined text-2xl"> notifications </span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEU24Gir2_V7eozYKY1dKvMoApcjAee93Lza2YY3fv7Ev_MjhDoiuM-SdQpvre70CR_Sz5cFjzyoX5m41lUsktcMv1IyXA5x3x9zyNFJGwcPzx_YMNJmbfPt7ltqqpTPSXu3fMQwr1n4xLm4KzYW8h8mc8jnnRegZCdMGEMg-m7g-2K6C88LaOJ5pOzdXT5fXPC6QpBSdmeT8o-ZOIRvfH63pu0f3sV5PWU-B30Edc8H49HZ8Fd_WbkFVQJ4tkz5hJx296VWHEFSE5");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 py-8 sm:px-6 md:px-10 lg:px-20">
+<div class="mx-auto max-w-4xl">
+<div class="mb-8">
+<h2 class="text-3xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">Q&amp;A</h2>
+<p class="mt-1 text-muted-light dark:text-muted-dark">Discuss course topics and share resources with your peers.</p>
+</div>
+<div class="space-y-4">
+<h3 class="px-1 text-lg font-semibold text-foreground-light dark:text-foreground-dark">Recent Questions</h3>
+<div class="rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light dark:bg-background-dark">
+<ul class="divide-y divide-subtle-light dark:divide-subtle-dark">
+<li class="flex cursor-pointer items-start gap-4 p-4 hover:bg-subtle-light/50 dark:hover:bg-subtle-dark/50">
+<img alt="Sarah Miller's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnfNDtqF7YPRpkPuGlmY4DWKI4_Ynd1LaiA_mxxPaqCguqWCGA_k4PUZQHHVL8Epspen5-ud5DAJJUTDUB4toS8J3rEj4Xv0rQx0XgMgPj4ri8-SYXuWouj07oBudwjCc0aBmqWmEv8tL0hEav_I-FbkPaTgLs0JrA8ul7vTUuvQNzqdj5nCxFlZDijy_Ab27wRmZWNp07H9ImlPeXplLQCRRBmPuNm5kCVz4Nj5fSii_2GsUlNjOZslKAcWNIGt1_iEvGZtbSSXqG"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Understanding the Basics of Quantum Physics</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Posted by Sarah Miller · 2d ago</p>
+<a class="text-xs text-red-500 hover:underline" href="#">Delete</a>
+</div>
+<span class="material-symbols-outlined text-muted-light dark:text-muted-dark mt-3"> chevron_right </span>
+</li>
+<li class="flex cursor-pointer items-start gap-4 p-4 hover:bg-subtle-light/50 dark:hover:bg-subtle-dark/50">
+<img alt="David Chen's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg03J5DIaOTKj1TursUG9Y1FALWmBhlTtqNv5mnxJ3lBuqRa-uFJ4o6j3xzWd_N8yM0uspkOw0AwIFfnPFIoDkjTKMHDI4ZdY8bVqJAvfX0c2A_fQsLK8Ne44rub0xzkvXVRDraKlAo1kBiFmPUiDRIgQq_uzyWJ3lx016uIvZpa2Va0ZczlLQn7l0sSVNyj1TzYnt5lBMwOUWd5I4j4OV7MRoYzcWRpHDeUMMmXPLuXdXsxiDwGJQpeWWeNw7dFHUe7dqBDI3VnE-"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Group Project Collaboration - Team Alpha</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Posted by David Chen · 3d ago</p>
+<a class="text-xs text-red-500 hover:underline" href="#">Delete</a>
+</div>
+<span class="material-symbols-outlined text-muted-light dark:text-muted-dark mt-3"> chevron_right </span>
+</li>
+<li class="flex cursor-pointer items-start gap-4 p-4 hover:bg-subtle-light/50 dark:hover:bg-subtle-dark/50">
+<img alt="Emily Rodriguez's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDqEntvHxZR-pJ3Ey0hzB0iBgnuaQxbq5m-a4rDbdbGjVteKSL41j8h348LDZxHjxmR_HcV29lwlKnqGsPlMJdOtOOl2TjctxdCZYMvy6TCU0wuuKLEZg4MNfnTdli1--Z7idfU0zYYZqyRchbLGH1gOw50Tp8ae9iFTY4sX1KIVxBk-PABI1vIKVlfUY5d43xvsadPhNwGUezxhXwi4UWhkeKQMmcCJa8h14Fmwr3zeMENya9pvVQ04qY2616cpLfXETSpNSW09wk"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Resources for Advanced Calculus</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Posted by Emily Rodriguez · 5d ago</p>
+<a class="text-xs text-red-500 hover:underline" href="#">Delete</a>
+</div>
+<span class="material-symbols-outlined text-muted-light dark:text-muted-dark mt-3"> chevron_right </span>
+</li>
+<li class="flex cursor-pointer items-start gap-4 p-4 hover:bg-subtle-light/50 dark:hover:bg-subtle-dark/50">
+<img alt="Alex Johnson's avatar" class="h-12 w-12 flex-shrink-0 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVRtneJOCCIpJ7tv4cmz7GfEdMGuI35p9Zo6NY_iI4m3J0-mn2-vEcHUXWeoDV3_wFC5Gji8tgHnhY7ff5FflplwGxZ6cp-_ilnoFW2kM7QgesJk7gcoBmtIbTTDi5lmdRH-1uxarRM1S0Uft1JfsU9r-xZrIb3A2dK4wQZfOpiVvJScLutm7ay56RzLcvD6o9icVEX5vc3PcA_A0vJNlwZpSI2VPudXDkXlCm5EithJGKTOXVqq2XYrUgPNu3gk8g4OTflAhnGpxD"/>
+<div class="flex-1">
+<p class="font-medium text-foreground-light dark:text-foreground-dark">Discussion on the Latest AI Trends</p>
+<p class="text-sm text-muted-light dark:text-muted-dark">Posted by Alex Johnson · 1w ago</p>
+<a class="text-xs text-red-500 hover:underline" href="#">Delete</a>
+</div>
+<span class="material-symbols-outlined text-muted-light dark:text-muted-dark mt-3"> chevron_right </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 flex justify-end p-4">
+<button class="flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-white shadow-lg transition-transform hover:scale-105">
+<span class="material-symbols-outlined"> add </span>
+<span class="font-semibold">New Question</span>
+</button>
+</footer>
+</div>
+
+</body></html>

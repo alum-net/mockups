@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StudyCentral - Edit Section</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10 border-b border-primary/20 dark:border-primary/10">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 text-gray-600 dark:text-gray-300 transition-colors">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+</svg>
+</button>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Edit Section</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 text-gray-600 dark:text-gray-300 transition-colors">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+<div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaLRoVOsxlQu5BVC-85Nc869v91GCJnVPeCkI8LsuwU6zWyVoXx0LEM0bgqVeVSBNR-hJsQpF37B9SsUszYps50lleoyJtrbZWVuuJ00tROWQRNFKeB4pTtEOzH4ZBTEyZdCYtzIo4rN3t8ibiCmuSYA14UbItSUS5a1d3qn_RHGp0H_oXjfrUfIQl4mdAYqcdDwDOQp4b95JqIwcuIpZ9rn3ja_YEjDOxzHp6f4zQuJNCFWRyzykcNUrOadL18k8Ghp67CEvk2zF0");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-6 py-8">
+<div class="max-w-4xl mx-auto">
+<div class="space-y-6">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="section-title">Section Title</label>
+<input class="mt-1 block w-full bg-background-light dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm p-3" id="section-title" placeholder="e.g., Week 1: Introduction" type="text" value="Week 1: The Science of Mind"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="section-summary">Summary</label>
+<textarea class="mt-1 block w-full bg-background-light dark:bg-background-dark/50 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm p-3" id="section-summary" placeholder="Provide a brief summary of this section" rows="4">Delve into the foundational principles of psychology and understand the scientific methods used to study the mind and behavior.</textarea>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Resources</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-background-dark/60 border border-gray-200 dark:border-gray-700">
+<div class="flex items-center gap-4">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31L188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path>
+</svg>
+<span class="font-medium">Foundations of Psychology.pdf</span>
+</div>
+<button class="text-red-500 hover:text-red-700 dark:hover:text-red-400 transition-colors">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path>
+</svg>
+</button>
+</div>
+<div class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-background-dark/60 border border-gray-200 dark:border-gray-700">
+<div class="flex items-center gap-4">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM93.33,128.69,72.69,149.33a8,8,0,0,1-11.32-11.32L83.06,116.3,61.37,94.61a8,8,0,0,1,11.32-11.32L94.3,105a8,8,0,0,1,1.56,10.53l-2.53,3.16ZM152,168H112a8,8,0,0,1,0-16h40a8,8,0,0,1,0,16Zm40-32H112a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-32H152a8,8,0,0,1,0-16h40a8,8,0,0,1,0,16Z"></path>
+</svg>
+<span class="font-medium">Tarea: Research Methods Essay</span>
+</div>
+<button class="text-red-500 hover:text-red-700 dark:hover:text-red-400 transition-colors">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div class="flex justify-end space-x-4 pt-4">
+<button class="px-6 py-3 rounded-lg text-sm font-semibold text-red-600 dark:text-red-500 bg-transparent hover:bg-red-500/10 transition-colors">Delete Section</button>
+<button class="px-6 py-3 rounded-lg text-sm font-semibold text-white bg-primary hover:bg-primary/90 transition-colors">Save Changes</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
